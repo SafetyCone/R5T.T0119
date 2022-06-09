@@ -11,10 +11,10 @@ namespace System
     public static class IAssertionExtensions
     {
         public static void AreEqual<T>(this IAssertion _,
-            T value1,
-            T value2)
+            T actual,
+            T expected)
         {
-            Assert.AreEqual(value1, value2);
+            Assert.AreEqual(actual, expected);
         }
 
         /// <summary>
