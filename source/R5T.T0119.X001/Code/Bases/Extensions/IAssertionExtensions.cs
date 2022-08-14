@@ -17,6 +17,13 @@ namespace System
             Assert.AreEqual(actual, expected);
         }
 
+        public static void AreEqual_ForArray<T>(this IAssertion _,
+            T[] actual,
+            T[] expected)
+        {
+            CollectionAssert.AreEqual(actual, expected);
+        }
+
         /// <summary>
         /// Allows explicitly stating that an action should not thrown an exception.
         /// With MSTest, if code throws an exception the test will fail. However, relying on this behavior means that test code will lack an assertion, which makes these test look different from all other tests.
