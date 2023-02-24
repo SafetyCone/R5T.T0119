@@ -14,7 +14,7 @@ namespace System
             T actual,
             T expected)
         {
-            Assert.AreEqual(actual, expected);
+            Assert.AreEqual(expected, actual);
         }
 
         public static void AreEqual_ForArray<T>(this IAssertion _,
