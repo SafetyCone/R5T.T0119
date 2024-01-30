@@ -8,6 +8,7 @@ using R5T.T0119;
 
 namespace System
 {
+    [Obsolete("Use R5T.F0101")]
     public static class IAssertionExtensions
     {
         public static void AreEqual<T>(this IAssertion _,
